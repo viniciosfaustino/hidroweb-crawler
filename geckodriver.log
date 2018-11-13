@@ -1,0 +1,189 @@
+1539124121876	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.hkmxd17tJTRD"
+1539124123657	Marionette	INFO	Listening on port 40659
+1539124123692	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539124249233	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.STn0a8SNf0HE"
+Error: no DISPLAY environment variable specified
+
+(/usr/lib/firefox-esr/firefox-esr:29336): dconf-WARNING **: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+console.log: Accessibility service init or shutdown observer does not exist.
+1539778102374	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.pLHib3hZK26F"
+*** You are running in headless mode.
+1539778104460	Marionette	INFO	Listening on port 38621
+1539778104486	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox-esr:4630): GLib-GObject-CRITICAL **: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1539778118604	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.kGaxD6mr3FrC"
+*** You are running in headless mode.
+1539778120265	Marionette	INFO	Listening on port 33409
+1539778120322	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox-esr:4773): GLib-GObject-CRITICAL **: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1539778134316	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.iNfhNIKOXtkI"
+*** You are running in headless mode.
+1539778135878	Marionette	INFO	Listening on port 36241
+1539778135924	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539778328838	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.wuioyMc4t5P1"
+*** You are running in headless mode.
+1539778330406	Marionette	INFO	Listening on port 33947
+1539778330456	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox-esr:5097): GLib-GObject-CRITICAL **: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1539778345499	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.6ETGD1phGzYK"
+*** You are running in headless mode.
+1539778347073	Marionette	INFO	Listening on port 45487
+1539778347108	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox-esr:5231): GLib-GObject-CRITICAL **: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1539778362899	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.d6aHTxqOTWNT"
+*** You are running in headless mode.
+1539778371225	Marionette	INFO	Listening on port 35353
+1539778371315	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox-esr:5383): GLib-GObject-CRITICAL **: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1539778385349	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.AVEhqTH36KgH"
+*** You are running in headless mode.
+1539778387006	Marionette	INFO	Listening on port 43617
+1539778387069	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox-esr:5522): GLib-GObject-CRITICAL **: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1539778402230	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.IloPTseTM0Wf"
+*** You are running in headless mode.
+1539778403865	Marionette	INFO	Listening on port 46643
+1539778403947	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox-esr:5709): GLib-GObject-CRITICAL **: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1539778418173	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.6luoS4lv3smX"
+*** You are running in headless mode.
+1539778419966	Marionette	INFO	Listening on port 46011
+1539778420037	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox-esr:5874): GLib-GObject-CRITICAL **: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1539778434431	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.vwGkMDC8dCGR"
+*** You are running in headless mode.
+1539778436059	Marionette	INFO	Listening on port 41077
+1539778436148	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox-esr:6029): GLib-GObject-CRITICAL **: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1540610932914	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.el6Mt0CAc78B"
+*** You are running in headless mode.
+1540610935025	Marionette	INFO	Listening on port 38269
+1540610935125	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox-esr:8349): GLib-GObject-CRITICAL **: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1540610950871	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.XHjFK8raxDrk"
+*** You are running in headless mode.
+1540610952522	Marionette	INFO	Listening on port 42899
+1540610952580	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox-esr:8485): GLib-GObject-CRITICAL **: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1540610968502	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.C2cMhLuZOqmC"
+*** You are running in headless mode.
+1540610970197	Marionette	INFO	Listening on port 41577
+1540610970220	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox-esr:8627): GLib-GObject-CRITICAL **: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1540610985371	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Gnv88tyhZl0w"
+*** You are running in headless mode.
+1540610987245	Marionette	INFO	Listening on port 33845
+1540610987283	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox-esr:8766): GLib-GObject-CRITICAL **: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1540611002573	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.H5mHOYu76Cdf"
+*** You are running in headless mode.
+1540611004261	Marionette	INFO	Listening on port 35533
+1540611004295	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox-esr:8903): GLib-GObject-CRITICAL **: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1540611019602	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.WgTqgsESKvj2"
+*** You are running in headless mode.
+1540611021397	Marionette	INFO	Listening on port 33735
+1540611021415	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox-esr:9050): GLib-GObject-CRITICAL **: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1540611040595	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.p18YMZmaBRES"
+*** You are running in headless mode.
+1540611042468	Marionette	INFO	Listening on port 38283
+1540611042509	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox-esr:9195): GLib-GObject-CRITICAL **: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+console.log: Accessibility service init or shutdown observer does not exist.
+console.log: Accessibility service init or shutdown observer does not exist.
+console.log: Accessibility service init or shutdown observer does not exist.
+console.log: Accessibility service init or shutdown observer does not exist.
+console.log: Accessibility service init or shutdown observer does not exist.
+console.log: Accessibility service init or shutdown observer does not exist.
+console.log: Accessibility service init or shutdown observer does not exist.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 9003, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-esr-RlCnTw/firefox-esr-60.2.2esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 8945, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-esr-RlCnTw/firefox-esr-60.2.2esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 8446, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-esr-RlCnTw/firefox-esr-60.2.2esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 8863, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-esr-RlCnTw/firefox-esr-60.2.2esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 8807, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-esr-RlCnTw/firefox-esr-60.2.2esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 8726, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-esr-RlCnTw/firefox-esr-60.2.2esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 8669, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-esr-RlCnTw/firefox-esr-60.2.2esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 8526, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-esr-RlCnTw/firefox-esr-60.2.2esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 9091, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-esr-RlCnTw/firefox-esr-60.2.2esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1542124418988	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.lmhgKkK0Cjf0"
+*** You are running in headless mode.
+1542124421080	Marionette	INFO	Listening on port 33655
+1542124421103	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox-esr:3890): GLib-GObject-CRITICAL **: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1542125865521	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.KB9LV8xCZRMh"
+*** You are running in headless mode.
+1542125867077	Marionette	INFO	Listening on port 46289
+1542125867131	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542126121087	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.kausQoEQNZg1"
+*** You are running in headless mode.
+1542126122599	Marionette	INFO	Listening on port 34269
+1542126122696	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542126171841	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.wI9VTJ6yKFVS"
+*** You are running in headless mode.
+1542126173385	Marionette	INFO	Listening on port 42827
+1542126173459	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox-esr:5745): GLib-GObject-CRITICAL **: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1542126188307	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.s3n0gLGfedc2"
+*** You are running in headless mode.
+1542126190004	Marionette	INFO	Listening on port 35091
+1542126190017	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 5979, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-esr-d2Q9MH/firefox-esr-60.3.0esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 5920, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-esr-d2Q9MH/firefox-esr-60.3.0esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1542126197567	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.esnlIx0YGqi5"
+*** You are running in headless mode.
+1542126199130	Marionette	INFO	Listening on port 45649
+1542126199181	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox-esr:6019): GLib-GObject-CRITICAL **: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1542126214173	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.rIfVhS1oWPnk"
+*** You are running in headless mode.
+1542126215798	Marionette	INFO	Listening on port 38937
+1542126215880	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox-esr:6157): GLib-GObject-CRITICAL **: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1542126229785	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Tb9TmUuiL4cO"
+*** You are running in headless mode.
+1542126231662	Marionette	INFO	Listening on port 35611
+1542126231700	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.snirh.gov.br/hidroweb/javax.faces.resource/bootstrapfaces.js.jsf;sessionid=epsqoccdnPmyzzy3letk8G04M7pE4WeBEzR72nAW.c8dd1c818249?ln=scripts, line 1: ReferenceError: jsf is not defined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 6400, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-esr-d2Q9MH/firefox-esr-60.3.0esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 6257, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-esr-d2Q9MH/firefox-esr-60.3.0esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 6338, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-esr-d2Q9MH/firefox-esr-60.3.0esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1542126397385	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.tCS4PijFweX1"
+*** You are running in headless mode.
+1542126398939	Marionette	INFO	Listening on port 35607
+1542126398997	Marionette	WARN	TLS certificate errors will be ignored for this session
