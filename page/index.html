@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  </head>
+  <section class="hero is-info">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+      <header class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroC" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item is-active">
+                Início
+              </a>
+              <a class="navbar-item">
+                Estações
+              </a>
+              <a class="navbar-item">
+                Sobre
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">
+          Monitoramento de nível de rios do Pantanal
+        </h1>
+        <h2 class="subtitle">
+          Uma abordagem com Machine Learning
+        </h2>
+      </div>
+    </div>
+
+    <div class="container is-ancestor box">
+      <article class="tile has-background-black-bis is-child">
+        <p class="title has-text-black-bis">Aqui temos informações sobre uma estação de coleta</p>
+        <div class="content has-text-black-bis">
+          <p>Porto Esperança</p>
+          <div class="container is-fluid">
+
+            <canvas id="myChart" width="600" height="200"></canvas>
+            <script>
+            var ctx = document.getElementById("myChart").getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ["1", "2", "3", "4", "5", "6"],
+                    datasets: [{
+                        label: 'Nível do rio (cm)',
+                        data: [10, 8, 11, 9, 11, 13],
+                        backgroundColor: [
+                            'rgba(100, 102, 255, 0.2)',
+                        ],
+                        borderColor: [
+                            'rgba(100, 102, 255, 1)',
+                        ],
+                        borderWidth: 5
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero:true
+                            }
+                        }]
+                    }
+                }
+            });
+            </script>
+        </div>
+      </article>
+    </div>
+
+    <div class="container is-ancestor box">
+      <article class="tile has-background-black-bis is-child">
+        <p class="title has-text-black-bis">Aqui temos informações sobre uma estação de coleta</p>
+        <div class="content has-text-black-bis">
+          <p>Porto Murtinho</p>
+          <div class="container is-fluid">
+
+            <canvas id="myChart2" width="600" height="200"></canvas>
+            <script>
+            var ctx = document.getElementById("myChart2").getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ["1", "2", "3", "4", "5", "6"],
+                    datasets: [{
+                        label: 'Nível do rio (cm)',
+                        data: [12, 13, 13, 12, 11, 9],
+                        backgroundColor: [
+                            'rgba(100, 102, 255, 0.2)',
+                        ],
+                        borderColor: [
+                            'rgba(100, 102, 255, 1)',
+                        ],
+                        borderWidth: 5
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero:true
+                            }
+                        }]
+                    }
+                }
+            });
+            </script>
+        </div>
+      </article>
+    </div>
+
+</html>
