@@ -8411,3 +8411,32 @@ console.log: Accessibility service init or shutdown observer does not exist.
 1543378858340	Marionette	WARN	TLS certificate errors will be ignored for this session
 
 (firefox-esr:20770): GLib-GObject-CRITICAL **: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+console.log: Accessibility service init or shutdown observer does not exist.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1543378883740	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.1offATNJuI8o"
+*** You are running in headless mode.
+1543378885362	Marionette	INFO	Listening on port 37465
+1543378885448	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox-esr:20959): GLib-GObject-CRITICAL **: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+console.log: Accessibility service init or shutdown observer does not exist.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1543378911855	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.N5N4SfINYlsM"
+*** You are running in headless mode.
+1543378913425	Marionette	INFO	Listening on port 39393
+1543378913465	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.log: Accessibility service init or shutdown observer does not exist.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1543378934628	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.moLHYXcVv4dc"
+*** You are running in headless mode.
+1543378936253	Marionette	INFO	Listening on port 46411
+1543378936340	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.log: Accessibility service init or shutdown observer does not exist.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1543378951646	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.jSYLlungzX2V"
+*** You are running in headless mode.
+1543378953333	Marionette	INFO	Listening on port 43007
+1543378953370	Marionette	WARN	TLS certificate errors will be ignored for this session
