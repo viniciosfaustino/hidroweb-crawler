@@ -72,5 +72,5 @@ for year in reversed(xrange(1990, current_year+1)):
             download_hidroweb(driver, id_estacoes[i], nomes_estacoes[i], home, dt)
             print("finalizando "+nomes_estacoes[i])
 
-            print()
+            print
             driver.quit()
