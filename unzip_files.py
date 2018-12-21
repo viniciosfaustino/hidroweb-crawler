@@ -1,8 +1,10 @@
 from zipfile import ZipFile
 from glob import glob
+from preprocessing import *
 import os
-PATH = "/home/vinicios/Downloads/teste"
 
+PATH = "/home/vinicios/Downloads/data"
+id_estacoes = ["67100000", "66960008", "66825000", "66810000", "66125000"]
 def belongs_to_station(file, station):
     if file.find(station) < 0:
         return False
@@ -19,12 +21,11 @@ class Unzip():
             stations = self.stations
         files = glob(self.path+"/*.zip")
         files.sort(key=os.path.getmtime, reverse=True)
-        print files
+        # print files
         cont = 0
         for station in stations:
             for file in files:
                 if file.endswith(".zip") and belongs_to_station(file, station):
-                    print str(cont) +"conte"
                     cont = cont +1
                     zip = ZipFile(os.path.join(PATH, file))
                     zip.extractall(PATH)
@@ -33,13 +34,15 @@ class Unzip():
             new_file = os.path.join(self.path, str(station+".csv"))
             print(old_file+" "+new_file)
             os.rename(old_file, new_file)
+            self.lista = []
 
     def concatenate(self, station):
-        print "huehueheuehueh"
-        output = open(self.path+"/temp.csv", "w+")
+        if os.path.isfile(self.path+"/temp.csv"):
+            os.remove(self.path+"/temp.csv")
+        output = open(self.path+"/temp.csv", "w")
         files = glob(self.path+"/*.csv")
         files.sort(key=os.path.getmtime, reverse=True)
-        skip = 0
+        skip = 1
         for file in files:
             if file.endswith(".csv") and belongs_to_station(file, station):
                 f = open(file, "r+")
@@ -54,3 +57,11 @@ class Unzip():
 
         output.write("".join(self.lista))
         output.close()
+
+if __name__ == '__main__':
+    unzip = Unzip(PATH, id_estacoes)
+    unzip.decompress()
+    for station in id_estacoes:
+        filename = station+".csv"
+
+        do_process(unzip.path, filename)
