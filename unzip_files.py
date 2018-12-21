@@ -54,6 +54,3 @@ class Unzip():
 
         output.write("".join(self.lista))
         output.close()
-
-unzip = Unzip(PATH, "67100000")
-unzip.decompress(["67100000"])
