@@ -22,6 +22,7 @@ class Unzip():
     def decompress(self, stations=None):
         if stations == None:
             stations = self.stations
+        # print("decompress path", self.path)
         files = glob(self.path+"/*.zip")
         files.sort(key=os.path.getmtime, reverse=True)
         # print files
@@ -30,26 +31,27 @@ class Unzip():
             for file in files:
                 if file.endswith(".zip") and belongs_to_station(file, station):
                     cont = cont +1
-                    zip = ZipFile(os.path.join(PATH, file))
-                    zip.extractall(PATH)
+                    zip = ZipFile(os.path.join(self.path, file))
+                    zip.extractall(self.path)
                     self.concatenate(station)
-            old_file = os.path.join(OUTPUT_PATH, "temp.csv")
-            new_file = os.path.join(OUTPUT_PATH, str(station+".csv"))
-            print(old_file+" "+new_file)
+            old_file = os.path.join(self.path, "temp.csv")
+            new_file = os.path.join(self.path, str(station+".csv"))
             os.rename(old_file, new_file)
             self.lista = []
 
     def concatenate(self, station):
         if os.path.isfile(self.path+"/temp.csv"):
             os.remove(self.path+"/temp.csv")
-        output = open(OUTPUT_PATH+"/temp.csv", "w")
+        output = open(self.path+"/temp.csv", "w")
         files = glob(self.path+"/*.csv")
         files.sort(key=os.path.getmtime, reverse=True)
         skip = 1
         for file in files:
+            # print(file)
             if file.endswith(".csv") and belongs_to_station(file, station):
                 f = open(file, "r+")
                 for line in f:
+                    # print("line",line)
                     if skip:
                         skip = 0
                     else:
@@ -57,7 +59,7 @@ class Unzip():
                 skip = 1
                 f.close()
                 # os.remove(os.path.join(PATH, file))
-
+        # print(self.lista)
         output.write("".join(self.lista))
         output.close()
 
@@ -65,7 +67,6 @@ if __name__ == '__main__':
     unzip = Unzip(PATH, id_estacoes)
     unzip.decompress()
     for station in id_estacoes:
-        print(station)
+        # print(station)
         filename = station+".csv"
-
         do_process(OUTPUT_PATH, filename)
