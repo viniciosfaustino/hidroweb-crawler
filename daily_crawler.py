@@ -36,6 +36,7 @@ def add_new_measure(source_path, dataset_path, station):
 
 if __name__ == '__main__':
     while(1):
+        start = time.time()
 
         id_estacoes = ["67100000", "66970000", "66960008", "66825000", "66810000", "66125000", "66750000"]
         nomes_estacoes = ["PORTO MURTINHO", "FORTE COIMBRA", "PORTO ESPERANCA", "LADARIO (BASE NAVAL)", "SAO FRANCISCO", "BELA VISTA DO NORTE", "PORTO DO ALEGRE"]
@@ -65,5 +66,6 @@ if __name__ == '__main__':
                 add_new_measure(SOURCE_PATH, OUTPUT_PATH, id_estacoes[i])
 
             #aqui deve ser chamada uma função que descompacta os arquivos e realiza o append no dataset
+        elapsed = time.time() - start
         print("Aguardando próxima medição")
-        time.sleep(24*3600)
+        time.sleep(24*3600 - elapsed)
