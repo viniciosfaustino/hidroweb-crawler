@@ -1,6 +1,7 @@
 import csv
 import time
 import datetime
+import os
 def remove_extra_columns(path,filename):
     with open(path+"/"+filename,"rb") as source:
         rdr= csv.reader( source,delimiter=";" )
@@ -8,7 +9,7 @@ def remove_extra_columns(path,filename):
             wtr = csv.writer( result,delimiter=";" )
             for r in rdr:
                 wtr.writerow( (r[0], r[3]) )
-
+    os.remove(os.path.join(path, filename))
 def get_day_mean(path,filename):
     result = {}
     with open(path+"/clean"+filename, 'rb') as csvfile:
@@ -34,6 +35,7 @@ def get_day_mean(path,filename):
         for k in result.keys():
             result[k] = sum(result[k])/int(len(result[k]))
     csvfile.close()
+    os.remove(os.path.join(path, "clean"+filename))
 
     with open(str(path+"/new"+filename),'wb') as f:
         w = csv.writer(f,delimiter=";")
@@ -50,6 +52,8 @@ def datetime_to_timestamps(path,filename):
             result.append([int(timestamp), row[1]])
 
         csvfile.close()
+    os.remove(os.path.join(path, "new"+filename))
+
     result = sorted(result, key=lambda x: x[0], reverse=False)
     with open(str(path+"/new_"+filename),'wb') as f:
         w = csv.writer(f,delimiter=" ")

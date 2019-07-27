@@ -10,9 +10,12 @@ from selenium.webdriver.common.keys import Keys
 
 import os
 import time
-home = os.path.expanduser('~')
 
 class Crawler():
+<<<<<<< HEAD
+=======
+    home = os.path.expanduser('~')
+>>>>>>> 883ea62eb23c7498bed0222846d7d0d5436a1fd6
     def wait_load_items(self, driver, xpath):
         n = 1
         p = 1
@@ -27,7 +30,7 @@ class Crawler():
             if n == 300:
                 print('Tempo de espera excedito. Processo encerrado.')
                 driver.quit()
-                return
+                return -1
 
     def click_css_selector(self, driver, css_selector):
         n = 0
@@ -37,6 +40,7 @@ class Crawler():
                 driver.find_element_by_css_selector(css_selector).click()
                 p = 0
             except:
+                # print("oe", css_selector)
                 time.sleep(1)
                 n += 1
 
@@ -76,6 +80,11 @@ class Crawler():
         print("selecionando estacao")
         driver.find_element_by_xpath('//*[@id="form:fsListaEstacoes:nomeEstacao"]').send_keys([name_estation, Keys.ENTER])
         print("solicitando arquivo")
+
+        self.wait_load_items(driver, '//*[@id="form:fsListaEstacoes:codigoEstacao"]')
+        driver.find_element_by_xpath('//*[@id="form:fsListaEstacoes:codigoEstacao"]').send_keys([id_station, Keys.ENTER])
+        self.wait_load_items(driver, '//*[@id="form:fsListaEstacoes:nomeEstacao"]')
+        driver.find_element_by_xpath('//*[@id="form:fsListaEstacoes:nomeEstacao"]').send_keys([name_estation, Keys.ENTER])
         self.click_css_selector(driver, '#form\\:fsListaEstacoes\\:bt')
         p = 1
         n = 0
@@ -107,7 +116,7 @@ class Crawler():
                     driver.quit()
                 except:
                     print("deu ruim, amizade")
-                return
+                return -1
             except:
                 pass
 
@@ -127,10 +136,10 @@ class Crawler():
             try:
                 #verifica se existem medicoes cadastradas para a data informada
                 driver.find_element(By.XPATH, '//li[contains(text(),"Não existe medições cadastrada para a estação selecionada.")]')
-                print "Sem medicões para a data"
+                print("Sem medicões para a data")
                 er = True
                 driver.quit()
-                return
+                return -1
             except:
                 pass
             while  p:
@@ -140,14 +149,16 @@ class Crawler():
                     p = 0
                     driver.quit()
                     print("Dados baixados com sucesso!")
+                    return 0
                 except:
                     n += 1
                 if n == 300:
                     print('Tempo de espera excedido. Processo encerrado.')
                     driver.quit()
-                    return
+                    return -1
                     # exit()
         except Exception as e:
             print(e)
         driver.quit()
+        return -1
         # print("oe")
