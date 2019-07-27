@@ -13,7 +13,7 @@ import time
 home = os.path.expanduser('~')
 
 class Crawler():
-    def wait_load_items(driver, xpath):
+    def wait_load_items(self, driver, xpath):
         n = 1
         p = 1
         while p:
@@ -29,7 +29,7 @@ class Crawler():
                 driver.quit()
                 return
 
-    def click_css_selector(driver, css_selector):
+    def click_css_selector(self, driver, css_selector):
         n = 0
         p = 1
         while p:
@@ -44,7 +44,7 @@ class Crawler():
                 print('Tempo de espera excedido.')
                 break
 
-    def download_hidroweb(driver, id_station, name_estation, dir_out, date):
+    def download_hidroweb(self, driver, id_station, name_estation, dir_out, date):
 
         # display = Display(visible=0, size=(800,600))
         # display.start()
@@ -52,8 +52,8 @@ class Crawler():
 
         url = 'http://www.snirh.gov.br/hidroweb/publico/apresentacao.jsf'
         driver.get(url)
-        time.sleep(1)
-        driver.get(url)
+        # time.sleep(1)
+        # driver.get(url)
         n = 0
         p = 1
         while  p:
@@ -67,18 +67,23 @@ class Crawler():
                 print('Tempo de espera excedido. Processo encerrado.')
                 driver.quit()
                 return
-
-        wait_load_items(driver, '//*[@id="form:fsListaEstacoes:codigoEstacao"]')
+        print("aguardando form de busca")
+        self.wait_load_items(driver, '//*[@id="form:fsListaEstacoes:codigoEstacao"]')
+        print("procurando campos para busca")
         driver.find_element_by_xpath('//*[@id="form:fsListaEstacoes:codigoEstacao"]').send_keys([id_station, Keys.ENTER])
-        wait_load_items(driver, '//*[@id="form:fsListaEstacoes:nomeEstacao"]')
+        print("enviando requisicao")
+        self.wait_load_items(driver, '//*[@id="form:fsListaEstacoes:nomeEstacao"]')
+        print("selecionando estacao")
         driver.find_element_by_xpath('//*[@id="form:fsListaEstacoes:nomeEstacao"]').send_keys([name_estation, Keys.ENTER])
-        click_css_selector(driver, '#form\\:fsListaEstacoes\\:bt')
+        print("solicitando arquivo")
+        self.click_css_selector(driver, '#form\\:fsListaEstacoes\\:bt')
         p = 1
         n = 0
-        while  p:
+        while p:
             try:
                 driver.find_element_by_link_text('Dados Telemétricos').click()
                 p = 0
+                print("selecionando dados telemetricos")
             except:
                 time.sleep(1)
                 n += 1
@@ -86,9 +91,10 @@ class Crawler():
                 print('Tempo de espera excedido. Processo encerrado.')
                 driver.quit()
                 return
-        wait_load_items(driver, '//div[contains(@class, "checkbox i-checks")]')
+        print("aguardando opcoes")
+        self.wait_load_items(driver, '//div[contains(@class, "checkbox i-checks")]')
         time.sleep(2)
-        wait_load_items(driver, '//div[contains(@class, "checkbox i-checks")]')
+        self.wait_load_items(driver, '//div[contains(@class, "checkbox i-checks")]')
         try:
             # dtInicio = "13/08/2018"
             # <p>Nenhum registro encontrado</p>
@@ -112,12 +118,12 @@ class Crawler():
             script = "document.getElementById('form:fsListaEstacoes:fsListaEstacoesT:dtFinal').setAttribute('value','"+dtFinal+"')"
             driver.execute_script(script);
 
-            click_css_selector(driver, '#form\\:fsListaEstacoes\\:fsListaEstacoesT\\:j_idt268\\:table\\:0\\:ckbSelecionadaT')
-            click_css_selector(driver, '#form\\:fsListaEstacoes\\:fsListaEstacoesT\\:radTipoArquivoT-componente > div:nth-child(2) > div:nth-child(2)')
-            click_css_selector(driver, '#form\\:fsListaEstacoes\\:fsListaEstacoesT\\:btGerarArquivoTel')
+            self.click_css_selector(driver, '#form\\:fsListaEstacoes\\:fsListaEstacoesT\\:j_idt268\\:table\\:0\\:ckbSelecionadaT')
+            self.click_css_selector(driver, '#form\\:fsListaEstacoes\\:fsListaEstacoesT\\:radTipoArquivoT-componente > div:nth-child(2) > div:nth-child(2)')
+            self.click_css_selector(driver, '#form\\:fsListaEstacoes\\:fsListaEstacoesT\\:btGerarArquivoTel')
             p = 1
             n = 0
-            wait_load_items(driver, '//li[contains(@class, "alert alert-info")]')
+            self.wait_load_items(driver, '//li[contains(@class, "alert alert-info")]')
             try:
                 #verifica se existem medicoes cadastradas para a data informada
                 driver.find_element(By.XPATH, '//li[contains(text(),"Não existe medições cadastrada para a estação selecionada.")]')
@@ -129,7 +135,8 @@ class Crawler():
                 pass
             while  p:
                 try:
-                    click_css_selector(driver, '#form\\:fsListaEstacoes\\:fsListaEstacoesT\\:btBaixar')
+                    self.click_css_selector(driver, '#form\\:fsListaEstacoes\\:fsListaEstacoesT\\:btBaixar')
+                    time.sleep(2)
                     p = 0
                     driver.quit()
                     print("Dados baixados com sucesso!")
